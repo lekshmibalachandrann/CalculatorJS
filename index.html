@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #2f4f4f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #796eee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <div class="display">
+            <input type="text" id="result" placeholder="0" style="text-align: right;" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="display('+')">+</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('/')">/</button>
+            <button  onclick="display('*')">*</button>
+            <button  onclick="display(0)">0</button>
+            <button  onclick="display(1)">1</button>
+            <button  onclick="display(2)">2</button>
+            <button  onclick="display(3)">3</button>
+            <button  onclick="display(4)">4</button>
+            <button  onclick="display(5)">5</button>
+            <button  onclick="display(6)">6</button>
+            <button  onclick="display(7)">7</button>
+            <button  onclick="display(8)">8</button>
+            <button  onclick="display(9)">9</button>
+            <button onclick="equal()">=</button>
+            <button  onclick="display('.')">.</button>
+            <button onclick="clearAll()">AC</button>
+            <button onclick="Backbtn()">←</button>
+
+        </div>
+    </div>
+    <script src="./cal.js">
+        
+    </script>
+</body>
+</html>
